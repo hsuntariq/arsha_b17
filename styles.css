@@ -1,0 +1,109 @@
+:root {
+  --primary: #37517e;
+  --text-md: 0.9rem;
+  --text-sm: 0.7rem;
+}
+
+.text-sm {
+  font-size: var(--text-sm) !important;
+}
+.text-md {
+  font-size: var(--text-md) !important;
+}
+
+.bg-blue {
+  background-color: var(--primary) !important;
+}
+
+.text-blue {
+  color: var(--primary) !important;
+}
+
+nav a {
+  color: white !important;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+}
+
+.img-animate {
+  animation: up-down 1s infinite linear alternate-reverse;
+}
+
+@keyframes up-down {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.b-image {
+  filter: grayscale(100%);
+  transition: all 0.6s;
+}
+
+.b-image:hover {
+  filter: grayscale(0%);
+}
+
+.gray {
+  width: 150px;
+  height: 1px;
+  background-color: lightgray;
+  margin: auto;
+  position: relative;
+}
+
+.blue {
+  width: 50%;
+  height: 2px;
+  background-color: var(--bs-info);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my-info-btn:hover {
+  color: white !important;
+}
+
+.text-md2 {
+  font-size: 1.05rem !important;
+}
+
+.fixed-bg {
+  background: linear-gradient(rgba(77, 109, 158, 0.5), rgba(77, 109, 158, 0.5)),
+    url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg")
+      fixed center center;
+}
+
+.overlay {
+  transform: translateY(70px);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.img-underlay {
+  overflow: hidden;
+}
+
+.img-underlay:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .my-img {
+    margin: auto !important;
+  }
+}
+@media (max-width: 575px) {
+  .team-img {
+    width: 30% !important;
+    margin: auto !important;
+    display: block !important;
+  }
+}
